@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Tambahkan baris ini
-  output: 'export', 
-  // ... konfigurasi lainnya
-}
+  output: "standalone",
+  reactStrictMode: false,
+  swcMinify: true,
+};
 
-module.exports = nextConfig
+export default nextConfig;
